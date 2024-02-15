@@ -60,9 +60,16 @@
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">parallelogram</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <p class="text-2xl">Area (A) = b X h</p>
+                      <div class="flex">
+                        <input type="text" name="" id="parallelogram-base" class="w-24 text-2xl p-2 rounded-sm bg-gray-200" placeholder="b" ><span class="mr-4 ml-2" >cm</span>
+                        <input type="text" name="" id="parallelogram-height" class="w-24 text-2xl p-2 rounded-sm bg-gray-200" placeholder="h"><span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="parallelogram-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions ">
+                        <button onclick="parallelogram()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -86,5 +93,6 @@
     </main>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle.js"></script>
+    <script src="scripts/parallelogram.js"></script>
 </body>
 </html>
